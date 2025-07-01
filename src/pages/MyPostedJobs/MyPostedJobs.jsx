@@ -10,7 +10,7 @@ const MyPostedJobs = () => {
     <div>
       <h2>My Posted Jobs:</h2>
       <Suspense fallback={<p>loading my posted jobs .....</p>}>
-        <JobsList myJobsPromise={myJobsPromise(user.email)} />
+        <JobsList myJobsPromise={myJobsPromise(user.email, user.accessToken)} />
       </Suspense>
     </div>
   );
