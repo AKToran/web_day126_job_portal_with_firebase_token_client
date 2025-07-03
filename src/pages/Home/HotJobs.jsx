@@ -9,7 +9,7 @@ const HotJobs = ({ jobsPromise }) => {
     <div>
       <h1 className="text-3xl font-bold text-center my-8">Hots Jobs of the day:</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {jobs.map((job) => (
+        { jobs.map((job) => (
           <JobsCard key={job._id} job={job} />
         ))}
       </div>
